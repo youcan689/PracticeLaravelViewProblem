@@ -32,6 +32,13 @@ Route::get('user/{name?}', function ($name = 'John') {
 //網址後要帶參數        後面也有個參數通常是同名  影片講解不錯
 
 //練習一個變數
-Route::get("/cats/{id}", function($x){
-     return "我是第".$x."號的貓";
+// Route::get("/cats/{id}", function($x){
+//      return "我是第".$x."號的貓";
+// });
+////Route可以有一個以上參數
+Route::get("/cats/{id}/{name}", function($x,$name){
+    return "我是第".$x."號的貓:".$name;
 });
+
+Route::get('/about', action:'WelcomeController@about');
+
