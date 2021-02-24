@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/hello', function () {
@@ -40,5 +42,7 @@ Route::get("/cats/{id}/{name}", function($x,$name){
     return "我是第".$x."號的貓:".$name;
 });
 
-Route::get('/about', action:'WelcomeController@about');
+//  右邊是顯示錯誤 影片中教的 可能看官方文件 Route::get('/about', action:'WelcomeController@about');
+route::get('/about',[app\Http\Controllers\WelcomeController::class,'about']);
+
 
