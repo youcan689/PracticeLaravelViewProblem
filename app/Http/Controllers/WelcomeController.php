@@ -9,9 +9,7 @@ class WelcomeController extends Controller
     //
 
     function about(){
-        $a=2;
-        echo "內部變數:\$a = ".$a;
-        return"hi";
+        return view(view:"about");
       }
       
       
