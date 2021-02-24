@@ -43,6 +43,8 @@ Route::get("/cats/{id}/{name}", function($x,$name){
 });
 
 //  右邊是顯示錯誤 影片中教的 可能看官方文件 Route::get('/about', action:'WelcomeController@about');
-route::get('/about',[app\Http\Controllers\WelcomeController::class,'about']);
+// route::get('/about',[app\Http\Controllers\WelcomeController::class,'about']);
+
+route::get('/about','WelcomeController@about');
 
 
