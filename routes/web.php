@@ -31,6 +31,7 @@ Route::get('user/{name?}', function ($name = 'John') {
 //cats/2
 //網址後要帶參數        後面也有個參數通常是同名  影片講解不錯
 
+//練習一個變數
 Route::get("/cats/{id}", function($x){
      return "我是第".$x."號的貓";
 });
