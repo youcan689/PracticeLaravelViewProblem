@@ -1,3 +1,6 @@
+@extends('layouts/application')
+
+
 <h1>hi</h1>
 @if(count($heros)>0)
 
