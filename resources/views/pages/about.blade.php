@@ -17,16 +17,4 @@
 
 @endif
 
-
-
-
-<!-- @if(count($heros)>0)
-    @foreach($heros as $hero)
-       @if
-
-       @endif
-
-    @endforeach
-
-
-@endif -->
+ 
