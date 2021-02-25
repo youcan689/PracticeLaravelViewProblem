@@ -2,13 +2,13 @@
 @if(count($heros)>0)
 
     @foreach($heros as $hero)
-        @if($loop->fist || $loop->last)
+        @if($loop->first || $loop->last)
         <li>
             <strong>{{$hero}}</strong>
         </li>
         @else
         <li>
-            {{$hero}}
+            {{$hero}}   
         </li>
         @endif
     @endforeach
@@ -16,3 +16,17 @@
 
 
 @endif
+
+
+
+
+<!-- @if(count($heros)>0)
+    @foreach($heros as $hero)
+       @if
+
+       @endif
+
+    @endforeach
+
+
+@endif -->
