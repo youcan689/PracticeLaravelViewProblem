@@ -16,7 +16,9 @@ class WelcomeController extends Controller
         
           //return view('pages.about');
           $name = "悟空";
-          return view('pages.about',['x'=>$name]);
+          //htmlspecialchars()
+          $js = "<script>alert('hi');</script>";
+          return view('pages.about',['x'=>$name,'js'=>$js]);
 
       }
       
