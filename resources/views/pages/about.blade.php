@@ -1,4 +1,18 @@
 <h1>hi</h1>
-@unless(false)
- true
+@if(count($heros)>0)
+
+    @foreach($heros as $hero)
+        @if($loop->fist || $loop->last)
+        <li>
+            <strong>{{$hero}}</strong>
+        </li>
+        @else
+        <li>
+            {{$hero}}
+        </li>
+        @endif
+    @endforeach
+
+
+
 @endif

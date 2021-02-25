@@ -15,10 +15,10 @@ class WelcomeController extends Controller
         
         
           //return view('pages.about');
-          $name = "悟空";
+          
           //htmlspecialchars()
-          $js = "<script>alert('hi');</script>";
-          return view('pages.about',['x'=>$name,'js'=>$js]);
+          $heros = ['悟空','達爾','佐助','鳴人','魯夫'];
+          return view('pages.about',['heros'=>$heros]);
 
       }
       
