@@ -23,4 +23,9 @@
 
 
  @section('title','程式累積腳踏實地')
+ @section('footer')
+<script>
+alert('為你自己學');
+</script>
+ @endsection
  

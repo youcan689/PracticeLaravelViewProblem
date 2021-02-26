@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/hello', function () {
     return view('welcome');
 });
-Route::get("/about.html",function(){
-	return "hi";
-});
+// Route::get("/about.html",function(){
+// 	return "hi";
+// });
 
 Route::get('user/{name?}', function ($name = null) {
     return $name;
@@ -47,4 +47,4 @@ Route::get("/cats/{id}/{name}", function($x,$name){
 
 route::get('/about','WelcomeController@about');
 
-
+route::resource(name:'posts',controller:\app\Http\Controllers\WelcomeController::class);
