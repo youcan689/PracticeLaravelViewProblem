@@ -47,4 +47,4 @@ Route::get("/cats/{id}/{name}", function($x,$name){
 
 route::get('/about','WelcomeController@about');
 
-route::resource(name:'posts',controller:\app\Http\Controllers\WelcomeController::class);
+route::resource('/photos',WelcomeController::class);
