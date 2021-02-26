@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-use App\Http\Controllers\WelcomeController;
+namespace App\Http\Controllers 
+use WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/hello', function () {
